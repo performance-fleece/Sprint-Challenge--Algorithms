@@ -104,11 +104,11 @@ class SortingRobot:
                 self.move_right()
                 self.sort_right()
 
-            else:
+            else:  # skipping if lower than
                 self.move_right()
                 self.set_light_on()
                 self.sort_right()
-        else:
+        else:  # End of left to right and returning right
             self.swap_item()
             self.sort_left()
 
@@ -123,7 +123,7 @@ class SortingRobot:
                 self.set_light_on()
                 self.sort_left()
 
-        else:
+        else:  # End of right to left
             self.swap_item()
 
     def sort(self):
@@ -151,3 +151,4 @@ if __name__ == "__main__":
 
     robot.sort()
     print(robot._list)
+    print(robot._time)
