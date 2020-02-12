@@ -99,7 +99,7 @@ class SortingRobot:
 
     def sort_right(self):
         if self.can_move_right():
-            if self.compare_item() == None or self.compare_item() == -1:
+            if self.compare_item() == None or self.compare_item() <= 0:
                 self.swap_item()
                 self.move_right()
                 self.sort_right()
@@ -114,7 +114,7 @@ class SortingRobot:
 
     def sort_left(self):
         if self.can_move_left():
-            if self.compare_item() == 1:
+            if self.compare_item() >= 0:
                 self.swap_item()
                 self.move_left()
                 self.sort_left()
