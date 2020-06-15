@@ -15,17 +15,17 @@ c) 0 (n)
 ## Exercise II
 
 def eggdrop(n)
-    floors = [i+1 for i in range(n)]
+    floors = list of floors
     middle = n/2
     while len(floors) > 1:
         throw from mid:
             if egg breaks:
-                recurse using start to (midpoint-1)
+                recurse using lower half
             if egg doesn't break:
-                recurse using midpoint to end of range
+                recurse using upper half
     return remaining value
 
-    This should be 0(log n), at each iteration the number of remaining floors is cut in half which is less than 0(n) but obviously not a constant.
+This should be 0(log n), at each iteration the number of remaining floors is cut in half which is less than 0(n) but obviously not a constant.
             
         
 
